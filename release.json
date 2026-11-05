@@ -1,0 +1,52 @@
+{
+  "released": true,
+  "build": "bz090c",
+  "version": "0.9.0",
+  "downloads": [
+    {
+      "filename": "bazillOS-09-Mini-Firmware.zip",
+      "title": "Mini firmware + guides",
+      "description": "Frozen bz090c image, fonts, themes, manuals, full licences and checksums.",
+      "firmware": true,
+      "bytes": 2892092,
+      "sha256": "7f51b1be1b6b98529089348d90bd6ec9c60e3b88baff5c1b589236731b862408",
+      "url": "https://github.com/kidbee85-beep/bazillOS/releases/download/v0.9.0/bazillOS-09-Mini-Firmware.zip"
+    },
+    {
+      "filename": "bazillOS-09-Complete-Manual.pdf",
+      "title": "Complete English handbook",
+      "description": "62 illustrated pages: native workflow, every added tool, engines, effects and reference.",
+      "firmware": false,
+      "bytes": 447070,
+      "sha256": "8c1e32a2e4fc96926f557b345d0815d8f2ba9e59a309e4e6d3b6af6e89a81055",
+      "url": "https://github.com/kidbee85-beep/bazillOS/releases/download/v0.9.0/bazillOS-09-Complete-Manual.pdf"
+    },
+    {
+      "filename": "bazillOS-09-Demos.zip",
+      "title": "50 starters +3 feature demos",
+      "description": "Native Projects folders in diverse genres, plus an empty template. Load in Projects; Save As.",
+      "firmware": false,
+      "bytes": 53079454,
+      "sha256": "5d294e0b04732d0f389cf0122f98e8c4be7184bd3f4ec95dad5b07a129b1d419",
+      "url": "https://github.com/kidbee85-beep/bazillOS/releases/download/v0.9.0/bazillOS-09-Demos.zip"
+    },
+    {
+      "filename": "bazillOS-09-Source.zip",
+      "title": "Complete matching source",
+      "description": "Clean extracted archive rebuilt the exact tested Mini image. Includes notices/build instructions.",
+      "firmware": false,
+      "bytes": 14118335,
+      "sha256": "d344c439e6d41060f23923d8a331228b1fc9f571af048730482b0a527fc054f4",
+      "url": "https://github.com/kidbee85-beep/bazillOS/releases/download/v0.9.0/bazillOS-09-Source.zip"
+    },
+    {
+      "filename": "bazillOS-09-Instagram-Kit.zip",
+      "title": "Instagram / Story kit",
+      "description": "45-second Short,15-second Story, web ident, posters, captions and posting notes.",
+      "firmware": false,
+      "bytes": 18997857,
+      "sha256": "0f8084d98174d13c743321021d8572c6261ff9c7020a14f456d47dfb10da0566",
+      "url": "https://github.com/kidbee85-beep/bazillOS/releases/download/v0.9.0/bazillOS-09-Instagram-Kit.zip"
+    }
+  ]
+}

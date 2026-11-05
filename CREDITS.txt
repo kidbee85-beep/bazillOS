@@ -1,0 +1,35 @@
+bazillOS / 0.9 / bz090c
+Independent Tracker Mini firmware fork by Kid Bunka.
+
+Required Notice: Copyright (c) 2020-2026 Polyend Sp. z o.o. and Polyend Tracker Community Edition Contributors (https://github.com/polyend/tracker-ce)
+
+The CE root licence is PolyForm Noncommercial 1.0.0 with Polyend additional
+permissions. Music, performance and monetised content are explicitly permitted.
+Firmware/software redistribution and sale follow the separate root terms.
+Polyend libPolySynth.a and libPolyDSP.a are unmodified and retain their authentic
+Polyend-hardware restriction. Full texts are in the source and firmware packs.
+
+Selected original Mutable Instruments DSP: Emilie Gillet / MIT; original names,
+complete notices and exact imported-file provenance remain in the source.
+TIDAL / CROSSBREED / Spore Dice are bounded adaptations, not full module ports.
+QUAD FM: MIT FM core from track3r-os at 5a43e1efead0b143ea1706a6c3a37a2953e2c60b.
+Spleen-derived Spore fonts: Frederic Cambus, BSD-2-Clause;
+5116f8eac7f65da2cfa169626ec43b5d041665fe. Complete notices accompany the source.
+
+Full upstream component list and inherited notices: NOTICE.txt / source NOTICE.md.
+No endorsement by Polyend, Mutable Instruments or the original authors implied.
+No code from unlicensed polygen::tracker was imported; it was a concept reference.
+Original themes, mascot artwork and added musical recipes are bazillOS work.
+
+Feature-demo compositions/audio are original generated work without private
+recordings; native patch/header terms remain in their included notices.
+The promo soundtrack is Kid Bunka's 0002french, arranged for this tour with a
+new Pattern17 variation and Drum Lab percussion. UI/software previews and host
+production audio are disclosed in the film. This is not hardware camera/audio
+capture. Personal projects/card backups are not in firmware/source downloads.
+
+Web ident Culture Boot: original 142BPM QUAD FM composition by Kid Bunka / bazillOS,
+rendered with the production DSP/presets on the host; not a Mini recording.
+A generic synthetic robot ident pronounces Bazillos as one German word.
+Original firmware glyphs, icons, texture and microbes are used on the website.
+The Spleen-derived web font retains its BSD-2-Clause notice.

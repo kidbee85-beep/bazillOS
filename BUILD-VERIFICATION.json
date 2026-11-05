@@ -1,0 +1,10 @@
+{
+  "build": "bz090c",
+  "firmware_sha256": "d3292ffa522a551751233aec0f3c927d8f16be84e110260b79c83d0288ce8fb6",
+  "source_archive_sha256": "d344c439e6d41060f23923d8a331228b1fc9f571af048730482b0a527fc054f4",
+  "clean_extracted_source_rebuild_byte_identical": true,
+  "source_archive_files": 5618,
+  "device_followup": "User confirmed final startup/build, repeated Play/Stop,70sec Composer controls and return to Pattern; prior reports retained.",
+  "host_checks": "Actual native callback regression reproduced and fixed;612 toolbar assertions. Earlier menu, chop, sample fallback, Composer timing and raster checks apply to byte-identical inputs. Linker limits respected, unchanged static RAM; no new allocation in final fix.",
+  "limits": "Not a universal crash-free, CPU timing or external-equipment guarantee. Mini only."
+}
