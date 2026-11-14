@@ -91,3 +91,59 @@ Viral Vox (SAM), Vowel Spore (NaiveSpeechSynth), and Reson Bloom (ModalEngine) u
 ## Spore Phosphor UI refinement
 
 The five Spore font faces retain their pinned Spleen-derived glyph geometry, original BSD-2-Clause attribution, advances and legacy UI control glyphs. This local variant increases L4 stem coverage for legibility. The generator and verification records are kept in tools/build_phosphor_fonts.py and evidence/spore-phosphor-fonts.json. See licenses/Spleen-BSD-2-Clause.txt and assets/spore-v2/SOURCE.json for upstream provenance.
+
+## bazillOS 0.9.1 beta2: Frost Partials / original music tools
+
+* **Frost Partials source**: `core/synth/engines/FrasilPartialDsp.h` and
+  `FrasilPartialDsp.cpp`, separately covered by **Mozilla Public License 2.0**.
+* **Origin**: FRASIL, https://github.com/styvesgoupil/frasil, commit
+  `76bedbe914efde9ed0d188a22a47c75a0292dabb`; selected routines from
+  `engine/dsp/frasil.c` and `engine/dsp/dsp.h`. Copyright (C)2026 Styves Goupil.
+  Adaptation Copyright (C)2026 Kid Bunka.
+* **Retained scope**: eight rotating-phasor partials, oscillator coefficient
+  correction, stretched spectral normalization and amplitude/tuning drift.
+  The native C++ adaptation uses standard single-precision math, one bounded
+  voice state at 44.1 kHz, Tracker controls and the native envelope/mix path.
+  It excludes full FRASIL choir/cloud/GLINT/delay/platform and FM-1 SDK code.
+* **Distribution**: include the complete modified MPL files, their notices,
+  `core/synth/vendor/frasil/ORIGIN.json` and `NOTICE.txt`, and
+  `licenses/MPL-2.0-FRASIL.txt`. MPL applies to these files and does not
+  relicense the entire firmware. Exact upstream blobs and changes are recorded
+  in ORIGIN.json; no blanket MIT licence or full-engine port is claimed.
+* **Original additions**: Spore Strings (model 19), its 12 BZ BOW presets, the
+  eight BZ FROST sound recipes, Cell Garden, Rhythm Loom, Step Logic and new
+  Punch visual motifs are original bazillOS work with their local notices.
+  Strings reuses bounded native storage and is not a full Elements port.
+* **Research distinction**: a 30-repository FM-1 catalogue records pinned
+  public source and licences/shared kernels. It is not 30 incorporated engines;
+  no GPL-covered whole FM-1 engine or unlicensed polygen code was linked.
+* Existing PolyForm, hardware-restricted Polyend binary, Mutable MIT, SDK,
+  track3r FM and Spleen font terms above remain in force. No endorsement by
+  FRASIL's author, Polyend or other upstream authors is implied.
+
+## bazillOS 0.9.3 beta 1 (bz093a): SPECTRA and Overtone Ladder
+
+* **SPECTRA** (`core/synth/engines/BazillSpectralDsp.h`, `BazillSpectralVoice.cpp`)
+  and the patch-editor visuals (`core/interface/instrumentEditor/BazillSynthViz*`)
+  are original bazillOS work, Copyright (C)2026 Kid Bunka, MIT. The 16-partial
+  additive voice, formant scan, bloom envelope and fast sine use no external
+  DSP source. The 24 BZ SPEC sound recipes are original.
+* **Overtone Ladder** (hidden fourth GRAVITY profile in
+  `core/source/breakline/arcade_synth.hpp`) is original bazillOS work, MIT.
+* **Engine badges and module glyphs** (`core/libs/NewDisplay/BazillEngineIcons*.h`,
+  `BazillModuleStyle.h`, `BazillModuleGlyphs.h`), the softkey key caps and the menu tile tint are original
+  bazillOS work, Copyright (C)2026 Kid Bunka, MIT.
+* All licences and notices above remain in force.
+
+## bazillOS 0.9.3 beta 1 (bz093c–bz093p): interface, preview and presets
+
+* **Synth PREVIEW** (`core/interface/instrumentEditor/BazillSynthPreview.*`),
+  the **control shapes** (`core/libs/NewDisplay/BazillControlShapes.h`), the
+  phosphor palette, demo intro, CRT shutdown, copper screensaver, petri-cell
+  menu and the rounded controls are original bazillOS work, Copyright (C)2026
+  Kid Bunka, MIT.
+* The **Added presets** (native engines, TIDAL, CROSSBREED, SPECTRA and the
+  "BZ P KIT" PERC kits) are original sound recipes by Kid Bunka. They set
+  parameters of the existing engines and contain no third-party sound data.
+* No third-party source was added after bz092a. The third-party notices and
+  licences above and in `licenses/` apply unchanged.
