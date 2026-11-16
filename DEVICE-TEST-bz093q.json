@@ -1,0 +1,16 @@
+{
+  "build": "bz093q",
+  "version": "0.9.3 beta 2",
+  "reported_date": "2026-11-16",
+  "reporter": "Kid Bunka",
+  "evidence_type": "user-reported physical Tracker Mini test",
+  "startup_version_build": "confirmed",
+  "playback_duration": "over 30 minutes",
+  "playback_result": "stable; no freeze reported",
+  "health_after_test": {
+    "FAILED ALLOCATIONS": 0,
+    "DISPLAY RECOVERIES": 0
+  },
+  "scope": "One reported device session. Individual help, synth-load and project-switch subchecks were not separately enumerated. The original community incident has not been reproduced; this is not a guarantee for every device or project.",
+  "firmware_sha256": "642f14ee97f6d9d6bcc024ad90584d4f9fb50536071ad99ca3066f4b5bc5a851"
+}

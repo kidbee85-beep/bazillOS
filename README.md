@@ -6,11 +6,11 @@ A tracker at heart. A different culture around it.
 
 [Website](https://kidbee85-beep.github.io/bazillOS/#release-093) · [0.9.3 beta 2 downloads](https://github.com/kidbee85-beep/bazillOS/releases/tag/v0.9.3-beta.2) · [Feedback](https://github.com/kidbee85-beep/bazillOS/issues)
 
-## bz093q hotfix — DEVICE TESTING PENDING
+## bz093q hotfix — device playback check passed (user report)
 
 A user reported freezing after a few minutes with the previous update and working playback after rollback to 0.9.1. The exact cause is unproven. This corrective pre-release fixes long display string sizes, bounds stalled display waits, improves workspace patch-load reserve/lifetime handling and adds HEALTH counters. SPECTRA scratch reserve is more conservative.
 
-**Not tested on a physical Mini yet.** Back up the complete card; retain known-working firmware and matching project backups. Check startup, long help, synth-project loads and 30 minutes of playback with view changes. Report HEALTH counters and whether audio continues if a freeze occurs. [Software test evidence](https://github.com/kidbee85-beep/bazillOS/releases/download/v0.9.3-beta.2/TEST-RESULTS.json).
+**Device report, 16 November 2026:** Kid Bunka confirms startup/version/build and over 30 minutes of stable playback, with FAILED ALLOCATIONS = 0 and DISPLAY RECOVERIES = 0. This is one reported Mini session; individual help/synth-load/project-switch subchecks were not separately enumerated. [Dated test record](DEVICE-TEST-bz093q.json). Back up the complete card; retain known-working firmware and matching project backups. Check startup, long help, synth-project loads and 30 minutes of playback with view changes. Report HEALTH counters and whether audio continues if a freeze occurs. [Software test evidence](https://github.com/kidbee85-beep/bazillOS/releases/download/v0.9.3-beta.2/TEST-RESULTS.json).
 
 ## New in 0.9.3
 
@@ -52,7 +52,7 @@ Firmware ZIP: cbce088de0edfc642c64de50c8ab396fb249f454b71dcc2a97128b8bfce7e102
 Source ZIP: 93d0910a9eebaafbba84d754bc7fbc62fe127ac2b8b2ce5cf01617e83ba91214
 ```
 
-The bz093q device test is pending. Actual-function patch-loading tests, SPI-emulated display tests and two byte-identical clean ARM builds passed. These do not establish physical Mini timing or resolve the specific reported freeze conclusively.
+Kid Bunka reports that the bz093q startup and 30+ minute playback check passed, with both HEALTH counters at 0. Actual-function patch-loading tests, SPI-emulated display tests and two byte-identical clean ARM builds passed. The device report and software checks do not establish every hardware timing or resolve the specific community freeze conclusively.
 
 ## Current boundaries
 
@@ -67,3 +67,5 @@ The Tracker Community Edition foundation uses **PolyForm Noncommercial 1.0 plus 
 Unmodified Polyend `libPolySynth.a` / `libPolyDSP.a` have their supplied authentic-hardware conditions. Selected Mutable Instruments DSP retains Émilie Gillet's MIT notices. The QUAD FM core derives from MIT-licensed track3r code. The Spleen-derived font retains its BSD-2-Clause notice. Component terms, origins and revisions are preserved in the source and firmware pack; see [LICENSE](LICENSE), [NOTICE](NOTICE.md) and [CREDITS](CREDITS.txt).
 
 Independent project; no Polyend, Mutable Instruments or Renoise endorsement is implied. Feedback, reproducible issues, musical ideas and patches are welcome. Support is optional through the website and does not purchase a promised feature or support contract.
+
+The immutable release assets were packaged before the device report and retain their original hashes and build-time test status. The dated device record above updates that status without changing the firmware.

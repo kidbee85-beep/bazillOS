@@ -5,8 +5,8 @@
   "downloads": [
     {
       "filename": "bazillOS-0.9.3-beta.2-Mini-Firmware.zip",
-      "title": "0.9.3 beta 2 hotfix / DEVICE TESTING PENDING",
-      "description": "bz093q firmware, READ-FIRST and licenses. Not yet tested on a physical Mini.",
+      "title": "0.9.3 beta 2 hotfix / device playback check passed",
+      "description": "bz093q firmware, READ-FIRST and licenses. Kid Bunka reports over 30 minutes stable on a Mini, both HEALTH counters 0. See the dated device-test addendum; packaged notes predate this test.",
       "firmware": true,
       "bytes": 2723478,
       "sha256": "cbce088de0edfc642c64de50c8ab396fb249f454b71dcc2a97128b8bfce7e102",
@@ -49,6 +49,22 @@
       "url": "https://github.com/kidbee85-beep/bazillOS/releases/download/v0.9.0/bazillOS-09-Demos.zip"
     }
   ],
-  "device_tested": false,
-  "status": "bz093q hotfix / DEVICE TESTING PENDING. Host checks and reproducible source rebuilds passed; physical Mini checks remain open."
+  "device_tested": true,
+  "status": "bz093q / USER-REPORTED DEVICE CHECK PASSED: over 30 minutes stable; FAILED ALLOCATIONS 0, DISPLAY RECOVERIES 0. One Mini session, not a guarantee for every setup.",
+  "device_test": {
+    "build": "bz093q",
+    "version": "0.9.3 beta 2",
+    "reported_date": "2026-11-16",
+    "reporter": "Kid Bunka",
+    "evidence_type": "user-reported physical Tracker Mini test",
+    "startup_version_build": "confirmed",
+    "playback_duration": "over 30 minutes",
+    "playback_result": "stable; no freeze reported",
+    "health_after_test": {
+      "FAILED ALLOCATIONS": 0,
+      "DISPLAY RECOVERIES": 0
+    },
+    "scope": "One reported device session. Individual help, synth-load and project-switch subchecks were not separately enumerated. The original community incident has not been reproduced; this is not a guarantee for every device or project.",
+    "firmware_sha256": "642f14ee97f6d9d6bcc024ad90584d4f9fb50536071ad99ca3066f4b5bc5a851"
+  }
 }
