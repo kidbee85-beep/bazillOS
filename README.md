@@ -1,10 +1,16 @@
-# bazillOS 0.9.3 beta 1
+# bazillOS 0.9.3 beta 2
 
 A tracker at heart. A different culture around it.
 
-**Independent community firmware for the Polyend Tracker Mini, by Kid Bunka. Build bz093p.**
+**Independent community firmware for the Polyend Tracker Mini, by Kid Bunka. Build bz093q.**
 
-[Website](https://kidbee85-beep.github.io/bazillOS/#release-093) · [0.9.3 beta 1 downloads](https://github.com/kidbee85-beep/bazillOS/releases/tag/v0.9.3-beta.1) · [Feedback](https://github.com/kidbee85-beep/bazillOS/issues)
+[Website](https://kidbee85-beep.github.io/bazillOS/#release-093) · [0.9.3 beta 2 downloads](https://github.com/kidbee85-beep/bazillOS/releases/tag/v0.9.3-beta.2) · [Feedback](https://github.com/kidbee85-beep/bazillOS/issues)
+
+## bz093q hotfix — DEVICE TESTING PENDING
+
+A user reported freezing after a few minutes with the previous update and working playback after rollback to 0.9.1. The exact cause is unproven. This corrective pre-release fixes long display string sizes, bounds stalled display waits, improves workspace patch-load reserve/lifetime handling and adds HEALTH counters. SPECTRA scratch reserve is more conservative.
+
+**Not tested on a physical Mini yet.** Back up the complete card; retain known-working firmware and matching project backups. Check startup, long help, synth-project loads and 30 minutes of playback with view changes. Report HEALTH counters and whether audio continues if a freeze occurs. [Software test evidence](https://github.com/kidbee85-beep/bazillOS/releases/download/v0.9.3-beta.2/TEST-RESULTS.json).
 
 ## New in 0.9.3
 
@@ -26,27 +32,27 @@ The existing sample, pattern, song and performance workflows remain. Four/eight-
 **Tracker Mini only.** OG and Tracker+ are not included.
 
 1. Save your session and back up the complete SD card. Keep earlier firmware and its matching project backup.
-2. Extract `bazillOS-0.9.3-beta.1-Mini-Firmware.zip` and read its READ-FIRST. Copy `Firmware/TrackerMini_bz093p.ptf` to the card's Firmware folder.
-3. Safely eject, insert the card in the Mini and select the file under Config > Firmware. After restarting, confirm **0.9.3 bazillOS beta1 / bz093p**.
+2. Extract `bazillOS-0.9.3-beta.2-Mini-Firmware.zip` and read its READ-FIRST. Copy `Firmware/TrackerMini_bz093q.ptf` to the card's Firmware folder.
+3. Safely eject, insert the card in the Mini and select the file under Config > Firmware. After restarting, confirm **0.9.3 bazillOS beta2 / bz093q**.
 4. Work in project copies. Older firmware cannot load SPECTRA projects; changing firmware does not convert their instrument data.
 
 Returning to original Mini 2.2.1 was tested during development. Returning to firmware and restoring matching original card data are separate steps. Keep original backups. Get stock firmware from [Polyend](https://polyend.com/downloads/tracker-mini-downloads/).
 
 ## Matching source and verification
 
-Use the release asset **`bazillOS-0.9.3-beta.1-Source.zip`**. Its `bazillOS-bz093p/` directory is the firmware build tree. The website repository files and GitHub's automatically generated source archives are not substitutes for that matching firmware source package.
+Use the release asset **`bazillOS-0.9.3-beta.2-Source.zip`**. Its `bazillOS-bz093q/` directory is the firmware build tree. The website repository files and GitHub's automatically generated source archives are not substitutes for that matching firmware source package.
 
-`BUILD-bz093p.txt` documents GNU Arm Embedded 10.3-2021.10 and the exact command. Use a directory path without spaces. The build tag is `bz093p`.
+`BUILD-bz093q.txt` documents GNU Arm Embedded 10.3-2021.10 and the exact command. Use a directory path without spaces. The build tag is `bz093q`.
 
-The 5,674 source entries matched the frozen manifest. An independent clean rebuild reproduced the released PTF byte for byte.
+The 5,677 source entries matched the frozen manifest. An independent clean rebuild reproduced the released PTF byte for byte.
 
 ```
-PTF SHA-256: e45385a2acc871ddf285c2c73455b636a66569145f6f47ff70a22dc2db1e2121
-Firmware ZIP: e49420474bf23b7ebb46c7d11791916663e70134421c7dd3ee3891231f224316
-Source ZIP: 4f4f9758ae0ea0206d8c960759bbac62f998ff67bea510b356923164140910a1
+PTF SHA-256: 642f14ee97f6d9d6bcc024ad90584d4f9fb50536071ad99ca3066f4b5bc5a851
+Firmware ZIP: cbce088de0edfc642c64de50c8ab396fb249f454b71dcc2a97128b8bfce7e102
+Source ZIP: 93d0910a9eebaafbba84d754bc7fbc62fe127ac2b8b2ce5cf01617e83ba91214
 ```
 
-Kid Bunka reported the bz093p device test passed and approved public release on 14 November 2026. This is an overall device report. Software tests separately check the SPECTRA DSP, preview phrases, native drawing bounds and display-list budgets. They do not establish every hardware load or external setup.
+The bz093q device test is pending. Actual-function patch-loading tests, SPI-emulated display tests and two byte-identical clean ARM builds passed. These do not establish physical Mini timing or resolve the specific reported freeze conclusively.
 
 ## Current boundaries
 

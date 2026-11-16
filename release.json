@@ -1,25 +1,25 @@
 {
   "released": true,
-  "build": "bz093p",
-  "version": "0.9.3 beta 1",
+  "build": "bz093q",
+  "version": "0.9.3 beta 2",
   "downloads": [
     {
-      "filename": "bazillOS-0.9.3-beta.1-Mini-Firmware.zip",
-      "title": "0.9.3 beta 1 Mini firmware",
-      "description": "bz093p firmware, READ-FIRST, notices and component licences.",
+      "filename": "bazillOS-0.9.3-beta.2-Mini-Firmware.zip",
+      "title": "0.9.3 beta 2 hotfix / DEVICE TESTING PENDING",
+      "description": "bz093q firmware, READ-FIRST and licenses. Not yet tested on a physical Mini.",
       "firmware": true,
-      "bytes": 2728444,
-      "sha256": "e49420474bf23b7ebb46c7d11791916663e70134421c7dd3ee3891231f224316",
-      "url": "https://github.com/kidbee85-beep/bazillOS/releases/download/v0.9.3-beta.1/bazillOS-0.9.3-beta.1-Mini-Firmware.zip"
+      "bytes": 2723478,
+      "sha256": "cbce088de0edfc642c64de50c8ab396fb249f454b71dcc2a97128b8bfce7e102",
+      "url": "https://github.com/kidbee85-beep/bazillOS/releases/download/v0.9.3-beta.2/bazillOS-0.9.3-beta.2-Mini-Firmware.zip"
     },
     {
-      "filename": "bazillOS-0.9.3-beta.1-Source.zip",
-      "title": "0.9.3 matching source",
-      "description": "Full source with build instructions. Independently rebuilt to the exact released image.",
+      "filename": "bazillOS-0.9.3-beta.2-Source.zip",
+      "title": "bz093q matching source",
+      "description": "Matching frozen source; independent clean rebuild byte-identical. Includes build instructions and manifest.",
       "firmware": false,
-      "bytes": 14696841,
-      "sha256": "4f4f9758ae0ea0206d8c960759bbac62f998ff67bea510b356923164140910a1",
-      "url": "https://github.com/kidbee85-beep/bazillOS/releases/download/v0.9.3-beta.1/bazillOS-0.9.3-beta.1-Source.zip"
+      "bytes": 14599536,
+      "sha256": "93d0910a9eebaafbba84d754bc7fbc62fe127ac2b8b2ce5cf01617e83ba91214",
+      "url": "https://github.com/kidbee85-beep/bazillOS/releases/download/v0.9.3-beta.2/bazillOS-0.9.3-beta.2-Source.zip"
     },
     {
       "filename": "bazillOS-0.9.3-New-Features-Guide.pdf",
@@ -48,5 +48,7 @@
       "sha256": "5d294e0b04732d0f389cf0122f98e8c4be7184bd3f4ec95dad5b07a129b1d419",
       "url": "https://github.com/kidbee85-beep/bazillOS/releases/download/v0.9.0/bazillOS-09-Demos.zip"
     }
-  ]
+  ],
+  "device_tested": false,
+  "status": "bz093q hotfix / DEVICE TESTING PENDING. Host checks and reproducible source rebuilds passed; physical Mini checks remain open."
 }
