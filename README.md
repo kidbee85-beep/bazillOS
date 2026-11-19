@@ -27,6 +27,12 @@ A user reported freezing after a few minutes with the previous update and workin
 
 The existing sample, pattern, song and performance workflows remain. Four/eight-track views, grouped tools, context help, compact PERC Drum Lab writes, the Chop workspace, Composer, Ambient Machine, musical Arcade tools, balanced Punch recipes and Master workflows are retained. MIDI routing on all sixteen tracks and seven assignable Pattern Punch favorites arrived in 0.9.2 and remain available.
 
+## Optional themes and fonts
+
+The optional SD-card themes and fonts were left out of the later firmware-only ZIPs. Download the separate [Themes and Fonts pack](https://github.com/kidbee85-beep/bazillOS/releases/download/v0.9.3-beta.2/bazillOS-Optional-Themes-and-Fonts.zip). It contains the original Acid Spores, Neon Culture, Phosphor Culture and Violet Fever themes plus two Spore font files and notices from 0.9.0, unchanged.
+
+Back up your card, merge `Themes/` and `Fonts/` into its root, then choose them under **Config > General > Display theme / Display font**. Keep existing files. **No downgrade or firmware reinstall is needed.** No new physical-device test is claimed for this repack.
+
 ## Install and keep a way back
 
 **Tracker Mini only.** OG and Tracker+ are not included.

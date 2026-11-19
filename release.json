@@ -13,6 +13,15 @@
       "url": "https://github.com/kidbee85-beep/bazillOS/releases/download/v0.9.3-beta.2/bazillOS-0.9.3-beta.2-Mini-Firmware.zip"
     },
     {
+      "filename": "bazillOS-Optional-Themes-and-Fonts.zip",
+      "title": "Four optional themes + two fonts",
+      "description": "Original SD-card themes/fonts from 0.9.0, unchanged. Includes Acid Spores, Neon Culture, Phosphor Culture and Violet Fever. Merge Themes/ and Fonts/ into the card root. No firmware or downgrade required.",
+      "firmware": false,
+      "bytes": 17867,
+      "sha256": "ed8f3b14e2b452f1ce2815ccca4644733aab1ceacb551adc0177dae258c122ce",
+      "url": "https://github.com/kidbee85-beep/bazillOS/releases/download/v0.9.3-beta.2/bazillOS-Optional-Themes-and-Fonts.zip"
+    },
+    {
       "filename": "bazillOS-0.9.3-beta.2-Source.zip",
       "title": "bz093q matching source",
       "description": "Matching frozen source; independent clean rebuild byte-identical. Includes build instructions and manifest.",
